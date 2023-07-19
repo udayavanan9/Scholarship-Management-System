@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Bebas+Neue&family=Cinzel&family=Explora&family=Great+Vibes&family=Kanit:wght@100&family=My+Soul&family=Noto+Sans+KR:wght@100&family=Orbitron&family=Pacifico&family=Poppins:wght@500&family=Prompt:ital,wght@1,300&family=Sevillana&family=Spectral+SC&family=Tilt+Prism&display=swap');
+
+
+
+/*
+font-family: 'Spectral SC', serif;
+font-family: 'Tilt Prism', cursive;
+font-family: 'Aboreto', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Explora', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Sevillana', cursive;
+font-family: 'Poppins', sans-seri
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+
+}
+nav{
+  font-family: 'Spectral SC', serif;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+   
+}
+.logo{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.logo i{
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  position: relative;
+  top: -17px;
+  left: -173px;
+  transform: rotate(350deg);
+  color: rebeccapurple;
+}
+.logo h3{
+  letter-spacing: 2px;
+  color: #8000c5;
+}
+.logo h3::first-letter{
+  
+  
+}
+.drop-main{
+   display: flex;
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+   justify-content: space-evenly;
+   margin-left: 500px;
+   width: 600px;
+
+}
+.dropdown{
+  margin-left: 2rem;
+    display: inline-block;
+    transition:all  2s ease-in-out;
+    z-index: 99;
+}
+.drop-content{
+  text-align: center;
+  top: 38px;
+  position: fixed;
+    margin-top: 20px;
+    display: none;
+    z-index: 1;
+    background: #8000c5;
+    transition: all 4s ease-in ;
+    padding: 1rem 2rem;
+  
+}
+.drop-content::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  top: -4px;
+  transform: rotate(45deg);
+  left: 10px;
+  height: 20px;
+  background: #8000c5;
+}
+.dropdown:hover .drop-content{
+    display: block;
+
+
+}
+a{
+    display: grid;
+}
+a{
+  text-decoration: none;
+}
+.butn{
+  background-color: transparent;
+  color: rgb(128, 0, 197);
+  padding: 1rem 25px;
+  font-family: 'Spectral SC', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+position: relative;
+}
+.butn:hover{
+  color:#848484;
+}
+.drop-content a{
+  text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 10px;
+    text-decoration: none;
+    display:block;
+  }
+  .drop-content a:hover{
+    color: rgb(33, 5, 49);
+  }
+  .sign{
+    display: flex;
+    gap: 10px;
+    margin-left: 4rem;
+  }
+  .sign a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #8000c5;
+    padding: 0.4rem 0.8rem;
+  }
+.hover{
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.hover a{
+  color:rgb(120, 0, 185);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 2.4rem;
+ 
+  border:0.2px solid rgb(128, 0, 197);
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+  overflow: hidden;
+  
+}
+.hover a:hover{
+  transition:all 0s ease-in;
+  color: white;
+}
+.hover a .one{
+  position: absolute;
+  background: rgb(128, 0, 197);
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  left: 42px;
+  bottom: 0;
+  transition: 0.6s;
+}
+.hover a .two{
+  position: absolute;
+  background: rgb(128, 0, 197);
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  right: 42px;
+  bottom: 0;
+  transition: 0.6s;
+}
+ .hover a:hover .one{
+  width: 100%;
+  left: 0;
+  
+ }
+ .img{
+  opacity: 0.6;
+ }
+ .hover a:hover .two{
+  width: 100%;
+  right: 0;
+ }
+
+ .head{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-seri;
+    font-size: 2.3rem;
+    color: #2c0a3e;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: -359px;
+    padding: 0.5rem 0;
+}
+.head p{
+  color: #000000;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  width: 1000px;
+  font-weight: bold;
+  font-family:  sans-serif;
+ 
+}
+.search{
+  margin-top: 0.7rem;
+  display: flex;
+  font-family: 'Poppins', sans-seri;
+}
+input{
+  outline: none;
+  letter-spacing: 2px;
+  width: 400px;
+  height: 36px;
+  padding: 1rem;
+
+}
+input:focus{
+  color: #2c0a3e;
+  font-size: 0.6rem;
+  border: 1px solid #2c0a3e;
+}
+.search button{
+  cursor: pointer;
+  border: none;
+  background: #2c0a3e;
+  color: aliceblue;
+  padding: 0.3rem 0.7rem;
+}
+ span{
+    position: relative;
+   left: 5px;
+   top: -5px;
+}
+.box{
+  position: relative;
+  top: -200px;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box1{
+    display: grid;
+    place-items: center;
+    width: 400px;
+    border-radius: 5px;
+    height: 250px;
+    font-family: 'Spectral SC', serif;
+    padding:1rem;
+    position: relative;
+}
+.box1 h4{
+    font-size: 1.3rem;
+    color: #ffffff;
+    position: absolute;
+    top: 120px;
+}
+.box1 img{
+    border-radius: 4px;
+
+}
+.box h4:hover{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+.box img:hover ~ h4{
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+.box1 a{
+    border-radius: 3px;
+text-decoration: none;
+background: #2c0a3e;
+color: white;
+padding: 0.4rem 1rem;
+}
+

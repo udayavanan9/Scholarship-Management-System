@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Bebas+Neue&family=Cinzel&family=Explora&family=Great+Vibes&family=Kanit:wght@100&family=My+Soul&family=Noto+Sans+KR:wght@100&family=Orbitron&family=Pacifico&family=Poppins:wght@500&family=Prompt:ital,wght@1,300&family=Sevillana&family=Spectral+SC&family=Tilt+Prism&display=swap');
+
+
+
+/*
+font-family: 'Spectral SC', serif;
+font-family: 'Tilt Prism', cursive;
+font-family: 'Aboreto', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Explora', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Sevillana', cursive;
+font-family: 'Poppins', sans-seri
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+
+}
+nav{
+  font-family: 'Spectral SC', serif;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+   
+}
+.logo{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.logo i{
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  position: relative;
+  top: -17px;
+  left: -173px;
+  transform: rotate(350deg);
+  color: rebeccapurple;
+}
+.logo h3{
+  letter-spacing: 2px;
+  color: #8000c5;
+}
+.logo h3::first-letter{
+  
+  
+}
+.drop-main{
+   display: flex;
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+   justify-content: space-evenly;
+   margin-left: 500px;
+   width: 600px;
+
+}
+.dropdown{
+  margin-left: 2rem;
+    display: inline-block;
+    transition:all  2s ease-in-out;
+    z-index: 99;
+}
+.drop-content{
+  text-align: center;
+  top: 38px;
+  position: fixed;
+    margin-top: 20px;
+    display: none;
+    z-index: 1;
+    background: #8000c5;
+    transition: all 4s ease-in ;
+    padding: 1rem 2rem;
+  
+}
+.drop-content::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  top: -4px;
+  transform: rotate(45deg);
+  left: 10px;
+  height: 20px;
+  background: #8000c5;
+}
+.dropdown:hover .drop-content{
+    display: block;
+
+
+}
+a{
+    display: grid;
+}
+a{
+  text-decoration: none;
+}
+.butn{
+  background-color: transparent;
+  color: rgb(128, 0, 197);
+  padding: 1rem 25px;
+  font-family: 'Spectral SC', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+position: relative;
+}
+.butn:hover{
+  color:#848484;
+}
+.drop-content a{
+  text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 10px;
+    text-decoration: none;
+    display:block;
+  }
+  .drop-content a:hover{
+    color: rgb(33, 5, 49);
+  }
+  .sign{
+    display: flex;
+    gap: 10px;
+    margin-left: 4rem;
+  }
+  .sign a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #8000c5;
+    padding: 0.4rem 0.8rem;
+  }
+  .head{
+    margin: 3rem;
+    color: #8000c5;
+    font-family: 'Poppins', sans-seri
+  }
+  .head p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+.main{
+  font-family: 'Poppins', sans-seri;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.box{
+  background: #fcffff;
+  text-align: center;
+  border: 0.01px solid rgb(237, 237, 237);
+ padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.1);
+  transform: skew(0);
+}
+.box:hover{
+  transform: skew(0deg);
+}
+.box i{
+  font-size: 4rem;
+  color: #8000c5;
+}
+.table{
+  font-family: 'Poppins', sans-seri;
+display: grid;
+place-items: center;
+}
+.table ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: 0.2px solid rgb(231, 231, 231);
+  background: #ffffff;
+}
+.table li:hover{
+  transform: scale(1.01);
+}
+span{
+  cursor: pointer;
+  background: #8000c5;
+  padding: 0.2rem 0.6rem;
+  border: 0.1px solid rgb(225, 225, 225);
+}
+span:hover{
+  transition: all 0.4s ease-in-out;
+ background: #fcffff;
+ color: #8000c5;
+}
+.table i{
+  margin-top: 7px;
+left: 10px;
+}
+.table ul{
+  list-style: none;
+  width: 80vw;
+}
+.head{
+  text-align: center;
+}
+.head h6{
+  color: rgb(86, 86, 86);
+}

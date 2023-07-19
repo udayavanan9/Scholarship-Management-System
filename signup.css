@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height:100vh ;
+    background:linear-gradient(20deg,#320f45 50%,#ffffff 50%) ;
+}
+
+.signup-form{
+    display: grid;
+    place-items: center;
+  }
+  .signup-form form{
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+    background: #320f45;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0,0.1);
+  }
+  .signup-form h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Prompt', sans-serif;
+  }
+  ::placeholder{
+    color: #dedede;
+  }
+  .signup-form input:focus{
+   padding-left: 1rem;
+   font-size: 0.7rem;
+   border: 0.1px solid #ffffff;
+  }
+  .signup-form input{
+    color: #fff;
+    padding: 0 1rem;
+    border:0.01px solid #ffffff;
+    background:transparent ;
+    outline: none;
+  margin: 1rem 0;
+  border-radius:5px;
+  height: 47px;
+  width: 500px;
+  }
+  .signup-form a{
+   border: none;
+ font-size: 1.3rem;
+   border-radius: 6px;
+    padding: 0.7rem 3rem;
+    background: #fff;
+    color: #320f45;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  .btn{
+    margin-top: 19px;
+    text-align: center;
+  }
+  .signup-form input{
+    position: relative;
+  }
+  .name{
+    color: rgb(235, 214, 255);
+  }
